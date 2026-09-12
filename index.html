@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>for.u 💌</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Comfortaa:wght@400;600;700&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Patrick+Hand&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- floating decoration -->
+  <div class="decor decor-1">🍀</div>
+  <div class="decor decor-2">♡</div>
+  <div class="decor decor-3">✦</div>
+  <div class="decor decor-4">🍀</div>
+  <div class="decor decor-5">🎀</div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      for<span>.u</span> <small>♡</small>
+    </div>
+
+    <div class="nav-pill">
+      made with love 🍀
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-sticker sticker-yellow">
+      tiny website
+    </div>
+
+    <div class="hero-sticker sticker-pink">
+      for someone special ♡
+    </div>
+
+    <div class="hero-content">
+
+      <p class="eyebrow">💌 a little corner of the internet</p>
+
+      <h1>
+        make something
+        <span>cute.</span>
+      </h1>
+
+      <p class="hero-description">
+        Create a tiny digital gift for someone you love.
+        No coding. Just feelings. 🍀
+      </p>
+
+      <button class="main-button" onclick="scrollToBuilder()">
+        make a gift <span>♡</span>
+      </button>
+
+      <p class="tiny-note">
+        ✦ takes about 2 minutes ✦
+      </p>
+
+    </div>
+
+    <div class="hero-card">
+      <div class="mini-browser">
+
+        <div class="browser-top">
+          <div class="dots">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <span>for.u ♡</span>
+
+          <span>🍀</span>
+        </div>
+
+        <div class="mini-content">
+
+          <div class="mini-heart">♡</div>
+
+          <p>someone made this</p>
+
+          <h3>just for you.</h3>
+
+          <button onclick="openGift()">
+            open ♡
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- BUILDER -->
+  <section class="builder-section" id="builder">
+
+    <div class="section-heading">
+      <p>✦ step into your little world</p>
+      <h2>make your gift</h2>
+    </div>
+
+    <div class="builder">
+
+      <!-- CONTROLS -->
+      <aside class="controls">
+
+        <div class="control-header">
+          <span>your gift</span>
+          <span>01</span>
+        </div>
+
+        <!-- NAME -->
+        <div class="field">
+          <label>to someone named...</label>
+
+          <input
+            type="text"
+            id="recipient"
+            placeholder="their name ♡"
+            maxlength="25"
+          />
+        </div>
+
+
+        <!-- MESSAGE -->
+        <div class="field">
+          <label>your little message</label>
+
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="write something from your heart..."
+            maxlength="220"
+          ></textarea>
+
+          <div class="counter">
+            <span id="charCount">0</span>/220
+          </div>
+        </div>
+
+
+        <!-- FONT -->
+        <div class="field">
+
+          <label>choose your handwriting</label>
+
+          <div class="font-grid">
+
+            <button
+              class="font-option active"
+              data-font="DM Sans"
+              style="font-family:'DM Sans'"
+            >
+              clean
+            </button>
+
+            <button
+              class="font-option"
+              data-font="Comfortaa"
+              style="font-family:'Comfortaa'"
+            >
+              bubbly
+            </button>
+
+            <button
+              class="font-option"
+              data-font="Pacifico"
+              style="font-family:'Pacifico'"
+            >
+              dreamy
+            </button>
+
+            <button
+              class="font-option"
+              data-font="Playfair Display"
+              style="font-family:'Playfair Display'"
+            >
+              elegant
+            </button>
+
+            <button
+              class="font-option"
+              data-font="Patrick Hand"
+              style="font-family:'Patrick Hand'"
+            >
+              handwritten
+            </button>
+
+            <button
+              class="font-option"
+              data-font="Quicksand"
+              style="font-family:'Quicksand'"
+            >
+              soft
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- COLOR -->
+        <div class="field">
+
+          <label>pick your blue 💙</label>
+
+          <div class="color-options">
+
+            <button
+              class="color-dot active"
+              style="background:#9ed8ff"
+              data-color="#9ed8ff"
+            ></button>
+
+            <button
+              class="color-dot"
+              style="background:#75bff2"
+              data-color="#75bff2"
+            ></button>
+
+            <button
+              class="color-dot"
+              style="background:#b7c9ff"
+              data-color="#b7c9ff"
+            ></button>
+
+            <button
+              class="color-dot"
+              style="background:#8bd3dd"
+              data-color="#8bd3dd"
+            ></button>
+
+            <button
+              class="color-dot"
+              style="background:#c4b5fd"
+              data-color="#c4b5fd"
+            ></button>
+
+          </div>
+
+        </div>
+
+
+        <!-- PHOTO -->
+        <div class="field">
+
+          <label>add a memory 📷</label>
+
+          <label class="upload">
+
+            <span>＋</span>
+
+            <p>
+              upload your favorite photo
+              <small>jpg / png</small>
+            </p>
+
+            <input
+              type="file"
+              id="photoInput"
+              accept="image/*"
+            />
+
+          </label>
+
+        </div>
+
+
+        <!-- STICKERS -->
+        <div class="field">
+
+          <label>add some stickers ✦</label>
+
+          <div class="sticker-options">
+
+            <button onclick="addSticker('🍀')">🍀</button>
+            <button onclick="addSticker('💌')">💌</button>
+            <button onclick="addSticker('🎀')">🎀</button>
+            <button onclick="addSticker('🌷')">🌷</button>
+            <button onclick="addSticker('🦋')">🦋</button>
+            <button onclick="addSticker('⭐')">⭐</button>
+            <button onclick="addSticker('♡')">♡</button>
+            <button onclick="addSticker('☁️')">☁️</button>
+
+          </div>
+
+        </div>
+
+
+        <!-- MUSIC -->
+        <div class="field">
+
+          <label>choose a song 🎧</label>
+
+          <select id="musicSelect">
+
+            <option value="">
+              no music
+            </option>
+
+            <option value="assets/music/your-song.mp3">
+              our little song ♫
+            </option>
+
+          </select>
+
+          <small class="music-note">
+            Add your own licensed audio to
+            <code>assets/music/</code>.
+          </small>
+
+        </div>
+
+
+        <button
+          class="create-button"
+          onclick="openGift()"
+        >
+          preview my gift 💌
+        </button>
+
+      </aside>
+
+
+      <!-- LIVE PREVIEW -->
+      <main class="preview-area">
+
+        <div class="preview-label">
+          <span>LIVE PREVIEW</span>
+          <span>♡</span>
+        </div>
+
+        <div
+          class="gift-card"
+          id="giftCard"
+        >
+
+          <div class="card-stars">✦　˚　✧　˚　✦</div>
+
+          <div class="clover">🍀</div>
+
+          <div class="photo-frame hidden" id="photoFrame">
+            <img id="previewPhoto" alt="memory" />
+          </div>
+
+          <p class="card-small">
+            a little something
+            <br>
+            for
+          </p>
+
+          <h2 id="previewRecipient">
+            someone ♡
+          </h2>
+
+          <div class="divider">
+            ✦
+          </div>
+
+          <p
+            class="card-message"
+            id="previewMessage"
+          >
+            write your message
+            and watch it appear here...
+          </p>
+
+          <div class="card-bottom">
+            made with ♡ & 🍀
+          </div>
+
+          <div id="stickerContainer"></div>
+
+        </div>
+
+        <p class="preview-tip">
+          ✦ everything updates live ✦
+        </p>
+
+      </main>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURES -->
+  <section class="features">
+
+    <div class="section-heading">
+      <p>and there's more...</p>
+      <h2>little things matter ♡</h2>
+    </div>
+
+    <div class="feature-grid">
+
+      <article class="feature-card blue">
+        <span>🎵</span>
+        <h3>your song</h3>
+        <p>
+          Give your gift its own soundtrack.
+        </p>
+      </article>
+
+      <article class="feature-card green">
+        <span>🍀</span>
+        <h3>your little world</h3>
+        <p>
+          Decorate it with stickers and memories.
+        </p>
+      </article>
+
+      <article class="feature-card pink">
+        <span>💌</span>
+        <h3>your words</h3>
+        <p>
+          Say the things that are hard to say.
+        </p>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-logo">
+      for.u 🍀
+    </div>
+
+    <p>
+      made for people who have too much love
+      and nowhere to put it.
+    </p>
+
+    <span>
+      © 2026 for.u
+    </span>
+
+  </footer>
+
+
+  <!-- GIFT MODAL -->
+  <div
+    class="gift-overlay"
+    id="giftOverlay"
+  >
+
+    <div class="gift-screen">
+
+      <div class="gift-sparkles">
+        ✦　♡　✧　🍀　✦
+      </div>
+
+      <p class="gift-pretitle">
+        someone made something for you...
+      </p>
+
+      <div
+        class="gift-box"
+        onclick="revealGift()"
+      >
+        <div class="box-lid"></div>
+        <div class="box-body"></div>
+        <div class="ribbon vertical"></div>
+        <div class="ribbon horizontal"></div>
+      </div>
+
+      <p class="click-text">
+        click the gift ♡
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- REVEAL -->
+  <div
+    class="reveal-overlay"
+    id="revealOverlay"
+  >
+
+    <div class="reveal-card">
+
+      <div class="reveal-clover">
+        🍀
+      </div>
+
+      <p>
+        a little something
+        <br>
+        made just for you
+      </p>
+
+      <h2 id="revealRecipient">
+        someone ♡
+      </h2>
+
+      <div
+        class="reveal-photo hidden"
+        id="revealPhoto"
+      >
+        <img id="revealImage" alt="memory" />
+      </div>
+
+      <div class="reveal-message">
+        <p id="revealMessage"></p>
+      </div>
+
+      <div class="heart-burst">
+        ♡　♡　♡
+      </div>
+
+      <button onclick="closeGift()">
+        keep this little secret ♡
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <audio
+    id="musicPlayer"
+    loop
+  ></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
